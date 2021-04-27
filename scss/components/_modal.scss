@@ -1,0 +1,71 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  &__form {
+    padding: 25px 40px;
+    max-width: 470px;
+    background-color: $color-section;
+  }
+  input,
+  textarea {
+    @include font(400, 14px, 17px, none, 0.04em);
+    padding: 14px 22px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: $color-background;
+    resize: none;
+  }
+  &__title {
+    @include font(700, 21px, 26px, none, 0.04em);
+    color: $color-black;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  &__close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    input {
+      width: auto;
+    }
+  }
+  &__description {
+    box-sizing: border-box;
+    @include font(400, 14px, 17px, none, 0.03em);
+    color: $color-black;
+    margin-left: 16px;
+  }
+  &__btn {
+    @include font(400, 12px, 12px, uppercase, 0.2em);
+    color: $color-white;
+    width: 100%;
+    padding: 30px 0;
+    outline: none;
+    border: none;
+    background-color: $color-black;
+    cursor: pointer;
+  }
+}

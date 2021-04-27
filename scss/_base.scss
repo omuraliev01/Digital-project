@@ -1,0 +1,130 @@
+
+body{
+    font-family: 'TT Hoves';
+    color: $color-black;
+    
+}
+ul,h1,h2,h3,h4,h5,h6,p,body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+}
+
+hr{
+    margin: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width: 8.3333%;
+}
+.col-2{
+    width: 16.6666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.3333%;
+}
+.col-5{
+    width: 41.6666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.3333%;
+}
+.col-8{
+    width: 66.6666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.3333%;
+}
+.col-11{
+    width: 91.6666%;
+}
+.col-12{
+    width: 100% ;
+}
+.title{
+    @include font(700, 64px, 1, uppercase);
+}
+.title span{
+    color: #BDBDBD;
+    font-weight: 300;
+}
+.section__title{
+    @include font (300, 64px, 1);
+    color: $color-gray;
+}
+
+@media screen and (max-width: 576px){
+    .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100% ;
+    }
+    .col-3{
+        width: 100% ;
+    }
+    .col-4{
+        width: 100% ;
+    }
+    .col-5{
+        width: 100% ;
+    }
+    .col-6{
+        width: 100% ;
+    }
+    .col-7{
+        width: 100% ;
+    }
+    .col-8{
+        width: 100% ;
+    }
+    .col-9{
+        width: 100% ;
+    }
+    .col-10{
+        width: 100% ;
+    }
+    .col-11{
+        width: 100% ;
+    }
+    .col-12{
+        width: 100% ;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .title { 
+        font-size: 44px;
+        max-width: 300px;
+    }
+}

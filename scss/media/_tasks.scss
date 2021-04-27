@@ -1,0 +1,19 @@
+@media screen and (max-width: 576px) {
+    .tasks {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .tasks__row {
+        padding-top: 30px;
+    }
+    .tasks__item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tasks__number {
+        margin: 20px 0;
+    }
+    .tasks__description {
+        margin-left: 0;
+    }
+}

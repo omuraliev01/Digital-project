@@ -1,0 +1,91 @@
+.contacts {
+  padding-bottom: 120px;
+  &__title {
+    margin-bottom: 22px;
+  }
+  &__row {
+    margin: 0 -15px;
+  }
+  &__column {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  &__item img{
+    max-height: 370px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    @include font(400, 14px, 17px, none, 0.04em);
+    padding: 14.3px 20px;
+    margin-bottom: 10px;
+    background-color: $color-background;
+    border: none;
+    outline: none;
+    font-family: TT Hoves;
+    color: #8d8d8d;
+    resize: none;
+    box-sizing: border-box;
+  }
+  &__form textarea{
+      margin-bottom: 22px;
+      box-sizing: border-box;
+      max-height: 147px;
+  }
+  &__description {
+    @include font(400, 14px, 1, none, 0.03em);
+    color: $color-black;
+    margin-left: 40px;
+    display: inline-block;
+    user-select: none;
+  }
+  &__checkbox {
+    position: relative;
+    margin-bottom: 22px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: $color-background;
+      border-radius: 4px;
+    }
+  }
+  input[type="checkbox"]:checked + label {
+    &::before {
+        background: $color-background url(../images/check.svg) no-repeat center;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  &__btn {
+    box-sizing: border-box;
+    padding: 30px 48px;
+    border: none;
+    outline: none;
+    color: $color-white;
+    background-color: $color-black;
+    cursor: pointer;
+    path{
+      fill: $color-white;
+    }
+    &:hover{
+      color: $color-black;
+      path{
+        fill: $color-black;
+      }
+    }
+    &::before{
+      background-color: $color-white;
+    }
+  }
+}

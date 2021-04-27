@@ -1,0 +1,26 @@
+@media screen and (max-width: 576px) {
+  .about {
+    padding-top: 60px;
+  }
+  .about__row {
+    padding: 30px 20px 30px 20px;
+  }
+  .about__img_first {
+    margin-right: 0;
+  }
+  .about__img_second {
+    margin-top: 0;
+  }
+  .about__item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .col-5 .about__item {
+    margin-left: 0;
+  }
+  .about__description {
+      margin: 20px 0 30px;
+  }
+}

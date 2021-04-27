@@ -1,0 +1,40 @@
+@import "./fonts/TTHoves";
+@import "./mixins";
+@import "./variables";
+@import "./base";
+
+// components
+@import "./components/header"; 
+@import "./components/hero";
+@import "./components/about";
+@import "./components/tasks";
+@import "./components/projects";
+@import "./components/contatcs";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/modal-thanks";
+
+// pages
+@import "./pages/gallery";
+@import "./pages/ourprojects";
+@import "./pages/contacts-info";
+@import "./pages/certificates";
+@import "./pages/parking";
+
+// vendors
+@import "./vendors/slick";
+
+
+
+//media 
+@import "./media/hero";
+@import "./media/about";
+@import "./media/tasks";
+@import "./media/projects";
+@import "./media/contacts";
+@import "./media/footer";
+
+//media pages 
+@import "./media/pages/gallery";
+@import "./media/pages/projects";
+@import "./media/pages/contacts-info";

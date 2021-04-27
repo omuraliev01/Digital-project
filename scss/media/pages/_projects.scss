@@ -1,0 +1,29 @@
+@media screen and (max-width: 576px) {
+    .ourprojects__title {
+        font-size: 26px;
+    }
+    .ourprojects__counter {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ourprojects .slick-next.slick-arrow {
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
+    .ourprojects .slick-prev.slick-arrow {
+        left: 0;
+        bottom: 0;
+    }
+    .ourprojects {
+        padding-bottom: 100px;
+    }
+    .parking__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parking__description {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
